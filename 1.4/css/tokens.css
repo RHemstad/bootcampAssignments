@@ -1,0 +1,151 @@
+
+
+
+
+:root {
+
+
+    --color__background__base: #fff;
+    --color__background__subtle: #f7f5f2;
+    --color__background__raised: #fff;
+
+
+    --color__standard__text: #1e1919;
+
+
+    --font__family__primary:  "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif; 
+
+
+    --color__dbx__blue--100: #0061ff;
+
+
+
+
+
+
+    /* ******** BREAKPOINTS ******** */
+    --dig-breakpoint__xlarge: 1920;
+    --dig-breakpoint__large: 1600;
+    --dig-breakpoint__medium: 1024;
+    --dig-breakpoint__small: 600;
+    --dig-breakpoint__xsmall: 0;
+
+
+
+    /* ******** COLOR BACKGROUNDS ******** */
+    --dig-color__background__base: #fff;
+    --dig-color__background__subtle: #f7f5f2;
+    --dig-color__background__raised: #fff;
+
+    /* ******** COLOR TEXT ******** */
+    --dig-color__text__base: #1a1918;
+    --dig-color__text__subtle: #736c64;
+
+    /* ******** COLOR BORDER ******** */
+    --dig-color__border__base: #bbb5ae;
+    --dig-color__border__subtle: #dfdcd8;
+    --dig-color__border__bold: #8c8279;
+
+    /* ******** COLOR DISABLED STATE ******** */
+    --dig-color__disabled__base: #bbb5ae;
+    --dig-color__disabled__on-base: #f7f5f2;
+    --dig-color__disabled__surface: #d3cec9;
+    --dig-color__disabled__on-surface: #8c8279;
+
+    /* ******** COLOR PRIMARY ******** */
+    --dig-color__primary__base: #0061fe;
+    --dig-color__primary__base--state-1: #004dc7;
+    --dig-color__primary__base--state-2: #003a97;
+    --dig-color__primary__on-base: #f2f7ff;
+    --dig-color__primary__surface: #deebff;
+    --dig-color__primary__surface--state-1: #c9ddff;
+    --dig-color__primary__surface--state-2: #b4d1ff;
+    --dig-color__primary__on-surface: #0057e0;
+
+    /* ******** COLOR SECONDARY ******** */
+    --dig-color__secondary__base: #1a1918;
+    --dig-color__secondary__base--state-1: #393633;
+    --dig-color__secondary__base--state-2: #4f4a46;
+    --dig-color__secondary__on-base: #f7f5f2;
+    --dig-color__secondary__surface: #f7f5f2;
+    --dig-color__secondary__surface--state-1: #ebe9e6;
+    --dig-color__secondary__surface--state-2: #dfdcd8;
+    --dig-color__secondary__on-surface: #242321;
+
+
+    /* ******** COLOR ALERTS ******** */
+    --dig-color__warning__base: #845909;
+    --dig-color__warning__base--state-1: #764f07;
+    --dig-color__warning__base--state-2: #593a03;
+    --dig-color__warning__on-base: #f9f6f0;
+    --dig-color__warning__surface: #fbe8ae;
+    --dig-color__warning__surface--state-1: #f5db84;
+    --dig-color__warning__surface--state-2: #eecc5d;
+    --dig-color__warning__on-surface: #755f1a;
+    --dig-color__success__base: #0f503c;
+    --dig-color__success__base--state-1: #206f54;
+    --dig-color__success__base--state-2: #2c8769;
+    --dig-color__success__on-base: #e2ece8;
+    --dig-color__success__surface: #e2ece8;
+    --dig-color__success__surface--state-1: #b8d6cc;
+    --dig-color__success__surface--state-2: #83c3ad;
+    --dig-color__success__on-surface: #206f54;
+    --dig-color__alert__base: #9b0032;
+    --dig-color__alert__base--state-1: #c0154c;
+    --dig-color__alert__base--state-2: #de346b;
+    --dig-color__alert__on-base: #f5e5eb;
+    --dig-color__alert__surface: #f5e5eb;
+    --dig-color__alert__surface--state-1: #ecc5d2;
+    --dig-color__alert__surface--state-2: #e5a3b9;
+    --dig-color__alert__on-surface: #c0154c;
+
+
+    /* ******** COLOR OPACITY ******** */
+    --dig-color__opacity__surface: rgba(155,100,0,.102);
+    --dig-color__opacity__surface--state-1: rgba(155,100,0,.149);
+    --dig-color__opacity__surface--state-2: #9b640033;
+
+    /* ******** COLOR UTILITY ******** */
+    --dig-color__utility__focus-ring: #3080ff;
+    --dig-color__utility__overlay: rgba(0,0,0,.502);
+
+    /* ******** COLOR HIGHLIGHT ******** */
+    --dig-color__highlight__blue: #b4d1ff;
+    --dig-color__highlight__blue--bold: #8bb7ff;
+    --dig-color__highlight__blue--bolder: #5f9dff;
+    --dig-color__highlight__purple: #d8c8f1;
+    --dig-color__highlight__purple--bold: #c1ace7;
+    --dig-color__highlight__purple--bolder: #ab90db;
+    --dig-color__highlight__yellow: #fbe8ae;
+    --dig-color__highlight__yellow--bold: #eecc5d;
+    --dig-color__highlight__yellow--bolder: #dcaf21;
+    --dig-color__highlight__red: #fec0af;
+    --dig-color__highlight__red--bold: #fb9d83;
+    --dig-color__highlight__red--bolder: #f77751;
+    --dig-color__highlight__green: #dff29f;
+    --dig-color__highlight__green--bold: #b4df1c;
+    --dig-color__highlight__green--bolder: #9fc418;
+
+    /* ******** COLOR ACCENT ******** */
+    --dig-color__accent__cyan: #007891;
+    --dig-color__accent__red: #9b0032;
+    --dig-color__accent__orange: #be4b0a;
+    --dig-color__accent__green: #0f503c;
+    --dig-color__accent__blue: #283750;
+    --dig-color__accent__purple: #78286e;
+    --dig-color__accent__magenta: #cd2f7b;
+    --dig-color__accent__yellow: #9b6400;
+    --dig-color__accent__on-accent: #fff;
+
+    /* ******** COLOR FOCUS ******** */
+    --dig-utilities__boxshadow__focus-ring: 0 0 0 3px var(--dig-color__utility__focus-ring)
+}
+
+
+
+
+
+
+
+
+
