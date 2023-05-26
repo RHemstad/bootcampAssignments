@@ -1,0 +1,117 @@
+/* ********* NOTES ********** */
+
+
+
+/* ********* GLOBAL ********** */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+    font-family: var( --font__family__primary);
+    font-size: 16px;
+    color: var(--color__standard__text);
+    color: var(--color-standard_text);
+    font-weight: normal; 
+    margin: 0 auto;
+}
+
+
+
+input, textarea, select, button, .normal {
+    font-size: 13px;
+    color: #000;
+    color: var(--color-standard_text);
+    font-weight: normal;
+}
+
+/******** HEADER *********/
+
+header {
+background-color: var(--color__background__base);
+box-sizing: border-box;
+color: rgb(30, 25, 25);
+display: block;
+font-weight: 400;
+height: var(--header__height);
+left: 0px;
+right: 0;
+top: 0;
+position: sticky;
+width: 100vw;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid var(--color__faint__border);
+
+
+}
+
+header a {
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 1;
+    cursor: pointer;
+    place-items: center;
+    color: var(--color__standard__text);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header nav:hover {
+background-color: var(--color__core__secondary);
+border: 1px solid green;
+}
+
+header nav:active {
+    background-color: var(--color__core__secondary);
+}
+
+header nav:active a {
+    color: var(--color__faint__text);
+}
+
+header nav:focus-visible {
+    box-shadow: inset var(--boxshadow__focusring);
+    outline: none;
+}
+
+
+
+header span:first-child {
+    width: 48px;
+    background: var(--color__core__accent);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+header span:first-child img {
+    width: 30px
+}
+
+header span:nth-child(2) img {
+    padding: var(--spacing__unit--2);
+}
+
+header nav {
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 1;
+    cursor: pointer;
+    place-items: center;
+    padding: var(--spacing__unit--2);
+}
+
+
+
+main {
+    padding: var(--spacing__unit--3);
+    border: 1px solid red;
+}
