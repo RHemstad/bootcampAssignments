@@ -4,6 +4,10 @@
 
 :root {
 
+    --color__core__primary: #1e1919;
+    --color__core__secondary: #f7f5f2;
+    --color__core__accent: #0061fe;
+
 
     --color__background__base: #fff;
     --color__background__subtle: #f7f5f2;
@@ -11,12 +15,30 @@
 
 
     --color__standard__text: #1e1919;
+    --color__faint__text: #524a3e;
+
+    --color__faint__border: #a6917133;
+
+    --color__utility__focusring: #428bff;
+    --boxshadow__focusring: 0 0 0 3px var(--color__utility__focusring);
 
 
     --font__family__primary:  "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif; 
 
 
-    --color__dbx__blue--100: #0061ff;
+
+    --header__height: 48px;
+
+    --spacing__base_unit: 8px;
+    --spacing__unit--0_5: 4px;
+    --spacing__unit--1: 8px;
+    --spacing__unit--1_5: 12px;
+    --spacing__unit--2: 16px;
+    --spacing__unit--2_5: 20px;
+    --spacing__unit--3: 24px;
+    --spacing__unit--4: 32px;
+    --spacing__unit--5: 40px;
+
 
 
 
