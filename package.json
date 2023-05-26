@@ -1,0 +1,14 @@
+{
+  "name": "bootcampassignments",
+  "version": "1.0.0",
+  "description": "repo for storing assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rebecca Hemstad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
