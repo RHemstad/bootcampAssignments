@@ -1,0 +1,35 @@
+
+
+/* **** Atlas Grotesk Regular **** */
+@font-face {
+    font-family: "Atlas Grotesk Web";
+    src: local("Atlas Grotesk Web"),
+      url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2");
+      font-weight: 400;
+  }
+
+  /* **** Atlas Grotesk Medium **** */
+  @font-face {
+    font-family: "Atlas Grotesk Web";
+    src: local("Atlas Grotesk Web"),
+      url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2");
+      font-weight: 500;
+  }
+
+
+/* **** Sharp_Grotesk Regular **** */
+@font-face {
+    font-family: "Sharp Grotesk";
+    src: local("Sharp Grotesk"), 
+    url("../fonts/SharpGrotesk-Book20.woff2") format("otf"),
+    url("../fonts/SharpGroteskDBCyrBook20.woff2") format("woff2");
+      font-weight: 400;
+  }
+
+  /* **** Sharp_Grotesk Regular **** */
+@font-face {
+    font-family: "Sharp Grotesk";
+    src: local("Sharp Grotesk"),
+      url("../fonts/SharpGroteskDBCyrBook23.woff2") format("woff2");
+      font-weight: 600;
+  }

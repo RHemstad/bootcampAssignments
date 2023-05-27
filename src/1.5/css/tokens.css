@@ -4,8 +4,10 @@
 
 :root {
 
+    --color__brand__graphite_600: #000;
+
     --color__core__primary: #1e1919;
-    --color__core__secondary: #f7f5f2;
+    --color__core__secondary: #f2eee8;
     --color__core__accent: #0061fe;
 
 
@@ -14,17 +16,40 @@
     --color__background__raised: #fff;
 
 
-    --color__standard__text: #1e1919;
-    --color__faint__text: #524a3e;
 
-    --color__faint__border: #a6917133;
+
+    --color__standard__text: #1e1919;
+    --color__faint__text: #524a3ed1;
+    --color__attention__text: #0061fe;
+
+    --color__inverse__standard__text: #f7f5f2;
+
+
     --color__standard__border: #a69e9299;
+    --color__faint__border: #a6917133;
+    --color__attention__border: #0061fe;
+
+    --color__attention__border--faint: #0061fe52;
+
 
     --color__utility__focusring: #428bff;
+    --color__opacity--4: rgba(0,0,0,.08);
+    --color__opacity--8: #2d2d2d;
+
+
+    --color__alert__text: #9b0032;
+    --color__alert__border: #9b0032;
+
+    --color__button__primary__hover: #0057e5;
+    --color__button__primary__active: #0050d0;
+
+
     --boxshadow__focusring: 0 0 0 3px var(--color__utility__focusring);
 
 
-    --font__family__primary:  "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif; 
+    --font__family__primary:  "Open Sans","lucida grande", "Segoe UI",arial, verdana, "lucida sans unicode",tahoma,sans-serif; 
+    --font-family__titles: "Sharp Grotesk", "SharpGrotesk", "Times", "Sharp Grotesk KR", "Sharp Grotesk Thai", var(--font-family__body);
+    --font-family__secondary: "Atlas Grotesk Web", "Atlas Grotesk", "AtlasGrotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 
 
@@ -39,6 +64,14 @@
     --spacing__unit--3: 24px;
     --spacing__unit--4: 32px;
     --spacing__unit--5: 40px;
+    --spacing__unit--6: 48px;
+
+
+
+
+
+
+
 
 
 
@@ -127,6 +160,8 @@
     --dig-color__opacity__surface: rgba(155,100,0,.102);
     --dig-color__opacity__surface--state-1: rgba(155,100,0,.149);
     --dig-color__opacity__surface--state-2: #9b640033;
+
+
 
     /* ******** COLOR UTILITY ******** */
     --dig-color__utility__focus-ring: #3080ff;
