@@ -150,6 +150,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  margin-bottom: 72px;
 }
 
 /* ** LINK STYLED TO LOOK LIKE A BUTTON ** */
