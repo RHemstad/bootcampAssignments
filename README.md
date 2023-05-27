@@ -6,7 +6,15 @@ repo for storing assignments
 
 node src/nodeserver.js
 
+ps - make sure to update server.js when you add new sub directories.
+
+
+# how to build
+
 npm run build
+
+# to deploy to netlify
+npm run build --mode=production
 
 # Where is it running
 
@@ -23,6 +31,5 @@ https://www.smashingmagazine.com/2021/06/getting-started-webpack/
 
 # deploy notes - need to go to deploys and unlock to start auto publishing
 
-# TODO
-set netlify build directory to dist with webpack
+
 

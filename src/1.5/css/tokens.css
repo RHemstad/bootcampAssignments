@@ -18,6 +18,7 @@
     --color__faint__text: #524a3e;
 
     --color__faint__border: #a6917133;
+    --color__standard__border: #a69e9299;
 
     --color__utility__focusring: #428bff;
     --boxshadow__focusring: 0 0 0 3px var(--color__utility__focusring);
