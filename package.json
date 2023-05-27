@@ -5,19 +5,12 @@
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
     "start": "node server.js"
   },
-  "author": "Rebecca Hemstad",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "lodash": "^4.17.21",
     "serve-index": "^1.9.1"
-  },
-  "devDependencies": {
-    "webpack": "^5.84.1",
-    "webpack-cli": "^5.1.1"
-  },
-  "keywords": []
+  }
 }
