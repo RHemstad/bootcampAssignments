@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Extraordinary Journey of Zog, the Little Green Alien</title>
+    <link  type="text/css" rel="stylesheet" href="./css/tokens.css">
     <link  type="text/css" rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
     <!-- https://stackoverflow.com/questions/59820346/how-to-turn-the-navbar-into-a-hamburger-menu-when-on-mobile -->
     <header class="header">
-        <a href="" class="logo">The Extraordinary Journey of Zog, the Little Green Alien</a>
+       <!--<a href="" class="logo"><img src="./images/zog.svg" alt="Zog Logo"></a> -->
         <input class="nav-btn" type="checkbox" id="nav-btn" />
         <label class="nav-icon" for="nav-btn"><span class="navicon"></span></label>
         <ul class="nav">
           <li><a href="#work">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#travels">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
@@ -26,11 +27,11 @@
 
     <!-- ***************************************** -->
     <!-- ************* HERO ****************** -->
-    <section id="hero">
-
-
-        
-
+    <section id="hero" class="hero">
+        <img src="./images/zog.svg" alt="Zog">
+        <h1>The Extraordinary Journey of Zog</h1>
+        <h2>The Little Green Alien</h2>
+        <a href="#about" class="arrow"><span class="sr-only">Scroll to Continue</span><span class="arrows"></span></a>
     </section>
 
 
@@ -40,18 +41,117 @@
     <!-- ***************************************** -->
     <!-- ************* ABOUT ZOG ****************** -->
     <section id="about">
+            <h3>ABOUT ZOG</h3>
 
+
+            <p>Once upon a starry night, in the distant reaches of the galaxy, a small green planet called Zorath thrived with intelligent life. Among its inhabitants was a remarkable little alien named Zog. Zog was not your typical extraterrestrial; he possessed an insatiable curiosity and an adventurous spirit that set him apart from his peers.</p>
+            <p>From an early age, Zog displayed an unquenchable thirst for knowledge and an unwavering desire to explore the unknown. While his fellow Zorathians were content with their mundane routines, Zog yearned for something more profound. He spent hours gazing at the countless stars adorning the night sky, dreaming of visiting other worlds.</p>
+            <p>Zog's fascination with space led him to delve into the ancient texts of Zorath, absorbing knowledge about the cosmos, advanced technologies, and interstellar travel. Determined to bring his dreams to life, Zog devoted years to honing his scientific skills, tinkering with spacecraft, and devising innovative inventions.</p>
+            <p>One fateful day, after countless attempts and failures, Zog successfully constructed a functional spacecraft capable of traversing the vast expanse of space. With his newfound vessel, affectionately named the Stardust Cruiser, Zog bid farewell to his family and friends, setting out on an extraordinary journey across the galaxy.</p>
+            <p>As Zog ventured into uncharted territories, he encountered diverse and captivating alien civilizations, each with its unique customs, languages, and traditions. He embraced these encounters with open arms, eager to forge connections and learn from the vast array of life forms he encountered.</p>
+            <p>During his travels, Zog made numerous discoveries that challenged his understanding of the universe. He encountered breathtaking celestial phenomena, such as nebulae and black holes, and encountered advanced civilizations that possessed knowledge far beyond his wildest imagination.</p>
+            <p>Zog's most profound realization, however, was the universal interconnectedness of all beings, regardless of their origin. Through his interactions, he learned that empathy, kindness, and understanding were the universal languages that transcended cultural and planetary boundaries.</p>
+            <p>Years turned into decades, and Zog's adventures continued to shape him, broadening his perspective on life and the universe. He became an ambassador of goodwill, sharing the wisdom and experiences he gained from his intergalactic sojourns.</p>
+            <p>Eventually, Zog returned to Zorath, his home planet, to share his extraordinary tales with his fellow Zorathians. His adventures had inspired countless individuals to embrace their own curiosity, venture into the unknown, and foster a deep appreciation for the vastness of the cosmos.</p>
+            <p>Today, Zog's legacy lives on as a testament to the power of exploration, the wonders of the universe, and the transformative potential of an open heart and inquisitive mind. His story serves as a reminder that even the smallest among us can embark on extraordinary journeys and leave an indelible mark on the cosmos.</p>
     </section>
 
-     <!-- ***************************************** -->
-    <!-- ************* PROJECTS ****************** -->
-    <section id="projects">
+
+
+
+
+
+
+    <!-- ***************************************** -->
+    <!-- ************* TRAVELS ****************** -->
+    <section id="travels">
+
+
+        <!-- START inner_part -->
+        <div class="card_container">
+
+            <input type="radio" name="select" id="slide_1" checked>
+            <input type="radio" name="select" id="slide_2">
+            <input type="radio" name="select" id="slide_3">
+            <input type="checkbox" id="img">
+
+            <div class="slider">
+                <label for="slide_1" class="slide slide_1"></label>
+                <label for="slide_2" class="slide slide_2"></label>
+                <label for="slide_3" class="slide slide_3"></label>
+              </div>
+
+          
+             <!-- CARD 1 -->
+            <div class="inner_part">
+              <label for="img" class="img">
+                <img class="img_1" src="./images/1.jpg" alt="1">
+              </label>
+              
+              <div class="content content_1">
+                <div class="title">İstanbul</div>
+                <div class="text">
+                  Istanbul, a fascinating city built on two Continents, divided by the Bosphorus Strait. This is one of the greatest cities in the world.
+                </div>
+              </div>
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="inner_part">
+              <label for="img" class="img">
+                <img class="img_2" src="./images/2.jpg" alt="2">
+              </label>
+
+              <div class="content content_2">
+                <div class="title">Ankara</div>
+                <div class="text">
+                  Ankara is Turkey's beating heart, second largest city, located in the Central Anatolia region and home to the Grand National Assembly of Turkey.
+                </div>
+              </div>
+            </div>
+          
+            <!-- CARD 3 -->
+            <div class="inner_part">
+              <label for="img" class="img">
+                <img class="img_3" src="./images/3.jpg" alt="3">
+              </label>
+
+              <div class="content content_3">
+                <div class="title">İzmir</div>
+                <div class="text">Located on the shores of the Aegean Sea, west of the Anatolian Peninsula, İzmir is the third-largest city in Turkey.
+                </div>
+              </div>
+            </div>
+
+
+
+        <!-- END CARD -->
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </section>
 
     <!-- ***************************************** -->
     <!-- ************* CONTACT ME ****************** -->
-    <section id="projects">
+    <section id="contact">
+
+        This is the contact me part yadda yadda
 
     </section>
     
@@ -61,6 +161,8 @@
 
 
     </main>
+
+    <footer>this is the footer</footer>
     
 </body>
 </html>
