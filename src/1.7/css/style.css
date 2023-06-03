@@ -2,6 +2,9 @@
 /* Not going to invest a ton of time in this because I'm already familiar with it and
    I'd rather spend the extra time reading a book I bought on JS. */
 
+/* Please don't freakin ask how many hours it took for me to write this stinkin css responsive slider */
+/* This uses dekstop first principles for the responsive design */
+
 
 /* ****************************** */
 /* ********** GLOBAL ************ */
@@ -12,20 +15,22 @@
 }
 
 html {
-  font-size: var(--font-size-base);
   min-height: 100%;
   height: 100%;
   scroll-behavior: smooth;
+  font-size: var(--font-size-mobile);
 }
 
 body {
+  font-size: var(--font-size-mobile);
   margin: 0;
   font-family: Helvetica, sans-serif;
   background-color: #f4f4f4;
   border: 1px solid red;
-  /*display: flex;
+  display: flex;
   align-items: center;
-  flex-direction: column;*/
+  flex-direction: column;
+
 
 }
 
@@ -75,7 +80,7 @@ h1 {
   h6 {}
   
   p {
-    max-width: 52ch;
+    max-width: 72ch;
   }
 
 /* ****************************** */
@@ -152,7 +157,7 @@ header .nav-icon {
 }
 
 header .nav-icon .navicon {
-  background: #333;
+  background: white;
   display: block;
   height: 2px;
   position: relative;
@@ -162,7 +167,7 @@ header .nav-icon .navicon {
 
 header .nav-icon .navicon:before,
 header .nav-icon .navicon:after {
-  background: #333;
+  background: white;
   content: '';
   display: block;
   height: 100%;
@@ -211,7 +216,8 @@ header .nav-btn:checked ~ .nav-icon:not(.steps) .navicon:after {
 /* ******************************************************************* */
 
 main {
-  position: relative;
+  /*position: relative;*/
+  width: 100%;
 }
 
 
@@ -317,7 +323,12 @@ margin-top: 4rem;
 /* *********************** ABOUT ***************************** */
 /* ******************************************************************* */
 
-#about p {}
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 
 
 
@@ -326,12 +337,13 @@ margin-top: 4rem;
 /* ******************************************************************* */
 
 #travels {
-  border: 4px solid red;
   position: relative;
-  height: 450px;
+  height: 700px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 .card_container {
   /*position: absolute;*/
@@ -340,20 +352,19 @@ margin-top: 4rem;
   background-color: #ffffff;
   border-radius: 1rem;
   display: flex;
-  border: 1px solid yellowgreen;
   flex-direction: row;
+  margin-top: -3rem;
 }
 
 .card_container .slider {
   position: absolute;
-  left: 55%;
+  left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   z-index: 1;
-  border: 4px solid purple;
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .card_container .inner_part {
@@ -364,27 +375,23 @@ margin-top: 4rem;
   flex-direction: row;
   width: inherit;
   padding: 0;
-  height: 350px;
-  border: 2px solid green;
+  height: 650px;
 }
 
 .inner_part .img {
-  width: 50%;
+  /*width: 60%;*/
   overflow: hidden;
-  border-radius: 1rem;
 }
 
 .img img {
-  height: 100%;
-  width: 100%;
+  max-height: 500px;
   cursor: pointer;
   opacity: 0;
   transition: .6s;
-
   max-inline-size: 100%;
   block-size: auto;
-  aspect-ratio: 2/1;
   object-fit: contain;
+  aspect-ratio: 1/1;
 }
 
 
@@ -427,7 +434,6 @@ margin-top: 4rem;
   color: #4e4a67;
   margin: 0 auto 30px auto;
   line-height: 1.5em;
-  text-align: justify;
 }
 
 
@@ -481,41 +487,58 @@ input {
 /* *********************************** */
 /* ********** MEDIA QUERY ************ */
 /* *********************************** */
-
-
+/* TODO: switch this css to do mobile first principles */
 
 /* Small devices (portrait - phones less than 578px */
 @media (max-width: 575.98px) { 
+
+  #travels {
+    height: 1200px;
+  }
 
 
   .card_container {
     width: 100%;
   }
 
+  .card_container .slider {
+    top: 500px;
+    bottom: initial;
+  }
+
   .card_container .inner_part {
     flex-direction: column;
+    justify-content: flex-start;
+    height: 1000px;
   }
 
   .inner_part .img {
     width: 100%;
   }
 
+  .img img {
+    max-height: 600px;
+  }
+
   .content {
     height: 50%;
     width: 100%;
     padding: 20px;
+    margin-top: 50px;
   }
 
-
-}
-
-@media (max-width: 992px) { 
 
 }
 
 /* 48rem = 768px */
 
 @media (min-width: 48rem) {
+
+  html, body {
+    font-size: var(--font-size-desktop);
+  }
+
+
   header {
     border: 1px solid red;
   }
