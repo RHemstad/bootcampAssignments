@@ -1,0 +1,184 @@
+<!-- ************** NOTES **************************************** -->
+<!-- was totally lazy and did not code the header to be responsive -->
+<!-- was likewise lazy and did not create responsive images for use with srcset etc -->
+<!-- did not use chatGPT or coPilot to write this code because it is so basic -->
+<!-- had fun messing with fluid typography -->
+<!-- used this opportunity to practice using inline and block in lieu of padding/margin -->
+<!-- only cross browser tested on mac in safari, firefox and chrome -->
+<!-- did not do prefers-color-scheme dark -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio: Rebecca Hemstad</title>
+    <link rel="stylesheet" href="./css/tokens.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+
+<!-- Back to top  -->
+<a onclick="topFunction()" id="button" title="Go to top"></a>
+
+<!-- ****************************************** -->
+<!-- ************** HEADER ******************** -->
+<header>
+    <hgroup>
+    <h1>Rebecca Hemstad</h1>
+    <p><a href="https://github.com/Rhemstad">My GitHub Repo</a></p>
+    </hgroup>
+
+    <nav>
+        <ul>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- ****************************************** -->
+<!-- ************** MAIN ******************** --> 
+<main>
+
+<!-- ************** LOCATION ******************** -->
+    <section id="location">
+        <h2>Location:</h2>
+        <div>
+        <p>I am currently located in North Carolina, USA.</p>
+        <p>I am originally from Canada.</p>
+
+        <figure>
+        <img src="./images/Flag_of_the_United_States.png" alt="United States Flag">
+
+        <figcaption>United States Flag</figcaption>
+        </figure>
+        </div>
+
+    </section>
+
+<!-- ************** SECTION 2: HOBBIES ******************** -->
+    <section id="hobbies">
+        <h2>Hobbies:</h2>
+
+        <ul>
+        <li>Console Gaming (PS5)</li>
+        <li>Digital Art</li>
+        <li>SciFi and Horror Movies/Novels</li>
+        <li>Baking French Pastry</li>
+        <li>Powerlifting</li>
+        </ul>
+
+    </section>
+
+
+    <!-- ************** SECTION 3: ABOUT ME ******************** -->
+    <section id="aboutMe">
+        <h2>About Me:</h2>
+
+        <div>
+
+        <figure>
+            <img src="./images/me1.png" alt="Rebecca Hemstad">
+             <figcaption>Rebecca</figcaption>
+        </figure>  
+          
+        <p>I am a UX/UI Designer with nearly 30 years experience. My current emphasis is Design Systems.
+            I work full time at an awesome large software company. I am also an educator. I have
+            taught web design at North Carolina State University and Savannah College of Art and Design.
+            Once I finish this bootcamp, I plan to dive into Python and Deep Learning. 
+        </p> 
+
+        </div>
+        
+        </section>
+
+<!-- ************** SECTION 4: CONTACT ME ******************** -->
+<!-- reference validating use of aria-label 
+    https://www.w3.org/TR/WCAG20-TECHS/ARIA2.html#:~:text=The%20WAI%2DARIA%20aria%2Drequired,is%20set%20to%20%22true%22. 
+-->
+<!-- self note: reminder that input is a void element 
+    Void elements only have a start tag; end tags must not be specified for void elements. 
+-->
+
+<section id="contactMe">
+    <h2>Contact Me</h2>
+
+    <form action="index.php" method="post">
+        <div>
+            <label for="name">Name: <span aria-label="required">*</span></label>
+            <input id="name" type="text" name="name" required>
+        </div>
+    
+        <div>
+            <label for="email">Email: <span aria-label="required">*</span></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="message">Message: <span aria-label="required">*</span></label>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+        </div>
+
+        <div>
+            <button type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+
+</section>
+
+</main>
+
+
+<!-- ****************************************** -->
+<!-- ************** FOOTER ******************** -->
+
+<footer>&#169; 2023</footer>
+
+
+
+<!-- ****************************************** -->
+<!-- ********** JAVASCRIPT ******************** -->
+
+<script>
+
+    // *** https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top *** //
+
+    // Get the button
+    let mybutton = document.getElementById("button");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
+</script>
+
+
+</body>
+</html>
