@@ -4,6 +4,9 @@ repo for storing assignments
 
 # How to run
 
+npm start
+
+because I set up a shortcut in package.json
 node src/nodeserver.js
 
 ps - make sure to update server.js when you add new sub directories.

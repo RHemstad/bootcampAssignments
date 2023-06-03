@@ -1,0 +1,58 @@
+:root {
+
+    /* breakponts */
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+
+    /* typography */
+    --font-family: "Inter","Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-size-base: 16px;
+    --font-size-h1: 3.247rem;
+    --font-size-h2: 2.887rem;
+    --font-size-h3: 2.281rem;
+    --font-size-h4: 1.125rem;
+    --font-size-h5: .889rem;
+
+    --font-size-default: 1rem;
+    --font-size-x-small: .79rem;
+    --font-size-small: .889rem;
+
+
+    /* color palette */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-primary: #0E41B0;
+    --color-secondary: #0eb0a8;
+    --color-neutral: #F9FAF5;
+
+
+    /* links */
+    --color-link-normal: var(--color-primary);
+    --color-link-hover: var(--color-secondary);
+    --color-link-visited: var(--color-primary);
+    --color-link-active: var(--color-secondary);
+
+    /* border radius */
+    --size-border-radius-full: 50%;
+    --size-border-radius-medium: 3px;
+    --size-border-radius-large: 80px;
+
+    /* typography */
+    --color-text: #2B3138; 
+
+    /* spacing */
+    --spacing-xx-sm: .25rem;
+    --spacing-x-sm: .5rem;
+    --spacing-sm: .75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.25rem;
+    --spacing-x-lg: 1.5rem;
+    --spacing-xx-lg: 1.75rem;
+    --spacing-xxx-lg: 2rem;
+
+
+}
