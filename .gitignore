@@ -3,3 +3,4 @@ src/.DS_Store,
 src/1.2/.DS_Store,
 src/1.5/.DS_Store,
 src/1.7/.DS_Store,
+*.DS_Store
