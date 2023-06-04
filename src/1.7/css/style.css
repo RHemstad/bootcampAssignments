@@ -3,7 +3,8 @@
    I'd rather spend the extra time reading a book I bought on JS. */
 
 /* Please don't freakin ask how many hours it took for me to write this stinkin css responsive slider */
-/* This uses dekstop first principles for the responsive design */
+/* This uses desktop first principles for the responsive design */
+/* still needs a little polish notably on the css slider but I've run out of time */
 
 
 /* ****************************** */
@@ -90,7 +91,7 @@ header {
   background-color: var(--color-primary);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 3;
 }
 
@@ -229,11 +230,12 @@ main {
   background: var(--color-primary) url("../images/sky.svg");
   background-size: cover;
   background-position: top;
+  margin-top: 55px; /* needs to be the height of the header */
 }
 
 #hero img {
-  max-width: 125px;
-  min-width: 100px;
+  max-width: 10rem;
+  min-width: 5rem;
   }
 
 .sr-only {
@@ -325,7 +327,7 @@ main {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-repeat: no-repeat;
-  width: 100%;
+  /*width: 100vw;*/
 }
 
 #about h3 {
@@ -346,12 +348,12 @@ main {
 #travels {
   position: relative;
   height: 700px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-neutral);
   padding-top: 5rem;
+  width: 100%;
 }
 
 .card_container {
@@ -361,7 +363,7 @@ main {
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
-  margin-top: -5rem;
+  /*margin-top: -5rem;*/
   background-color: var(--color-neutral);
   border: 1px solid green;
 }
@@ -385,7 +387,12 @@ main {
   flex-direction: row;
   width: inherit;
   padding: 0;
-  height: 650px;
+  /*max-height: 650px;*/
+  height: inherit;
+}
+
+.inner_part label {
+  max-width: 45%;
 }
 
 .inner_part .img {
@@ -415,6 +422,7 @@ main {
 .content {
   padding: 10px 20px 0 35px;
   width: 530px;
+  max-width: 45%;
   margin-left: 50px;
   opacity: 0;
   transition: .6s; 
@@ -456,7 +464,7 @@ main {
   position: relative;
   height: 10px;
   width: 50px;
-  background: var(--color-neutral);
+  background: var(--color-alt2);
   border-radius: 5px;
   display: inline-flex;
   margin: 0 3px;
@@ -501,10 +509,10 @@ main {
   align-items: center;
   margin-top: 2rem;
   background-color: var(--color-primary);
-  background: url("../images/planet2.png"), url("../images/planet4.png"), url("../images/sky.svg");
-  background-size: 400px, 400px, cover;
-  background-position: top 200px left 20px, bottom 80px right 20px, top;
-  background-attachment: fixed, fixed, fixed;
+  background: url("../images/planet2.png"), url("../images/sky.svg");
+  background-size: 400px, cover;
+  background-position: top 100px left 5px, top;
+  background-attachment: fixed, fixed;
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-repeat: no-repeat;
@@ -678,10 +686,54 @@ footer {
 /* TODO: switch this css to do mobile first principles */
 
 
-@media (max-width: 991px) { 
-  body {
-    font-size: var(--font-size-mobile);
+@media (max-width: 359px) {
+
+  #hero img {
+    max-width: 4rem;
+    min-width: 1rem;
+}
+
+
+  #travels {
+    height: 1200px;
+  } 
+
+  .inner_part label {
+    max-width: 100%;
   }
+
+  .content {
+    max-width: 100%;
+  }
+  
+
+}
+
+/*media query for 360px to 575.98px*/
+@media screen and (min-width: 360px) and (max-width: 575.98px) {
+
+  #hero img {
+    max-width: 100px;
+    min-width: 1rem;
+}
+
+  #travels {
+    height: 1000px;
+  }
+
+  .card_container .slider {
+    top: 550px;
+    bottom: initial;
+}
+
+.inner_part label {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 100%;
+}
+
 }
 
 
@@ -691,17 +743,14 @@ footer {
     padding: 0 20px;
   }
 
-  #travels {
-    height: 1200px;
-  }
 
   .card_container {
     width: 100%;
   }
 
   .card_container .slider {
-    top: 500px;
-    bottom: initial;
+   /* top: 500px;
+    bottom: initial;*/
   }
 
   .card_container .inner_part {
@@ -724,9 +773,15 @@ footer {
     padding: 20px;
     margin-top: 50px;
   }
-
-
 }
+
+
+@media (max-width: 991px) { 
+  body {
+    font-size: var(--font-size-mobile);
+  }
+}
+
 
 /********* RESPONSIVE NAV TO HAMBURGER ICON *********/
 /* 48rem = 768px */
