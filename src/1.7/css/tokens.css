@@ -31,10 +31,11 @@
     /* color palette */
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-primary: #003366; /*#174396*/
-    --color-secondary: #8db831;
+    --color-primary: #000a38; /*#174396*/
+    --color-secondary: #99cc33;
     --color-tertiary: #c0ef4d;
     --color-neutral: #F9FAF5;
+    --color-alt1: #00145c;
 
 
     /* links */
