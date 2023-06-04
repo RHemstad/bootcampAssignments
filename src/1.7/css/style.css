@@ -18,66 +18,88 @@ html {
   min-height: 100%;
   height: 100%;
   scroll-behavior: smooth;
-  font-size: var(--font-size-mobile);
+  font-size: var(--font-size-desktop);
 }
 
 body {
   font-size: var(--font-size-mobile);
   margin: 0;
-  font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
-  border: 1px solid red;
+  font-family: var(--font-family-body);
+  font-weight: var( --font-weight-regular);
+  background-color: var( --color-neutral);
   display: flex;
   align-items: center;
   flex-direction: column;
-
-
 }
 
-a {
-  color: #000;
-}
+
 
 /* *********************************** */
 /* ************* HEADINGS ************** */
 /* *********************************** */
 /* using 1.618 Scale - golden ratio */
 
-h1 {
-  font-weight: 700;
-  font-size: var(--font-size-h1);
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings);
+  font-weight: var( --font-weight-bold);
   margin: 0;
-  }
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  color: var(--color-tertiary);
+  text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+
+}
       
   h2 {
-  font-weight: 200;
   font-size: var(--font-size-h2);
-  margin: 0;
+  color: var(--color-secondary);
   }
       
   h3 {
-  font-weight: 700;
   font-size: var(--font-size-h3);
-  /*margin-top: 1em;*/
-  color: #174396;
-  margin-bottom: 0;
   margin-bottom: 1rem;
+  text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
   }
   
   h4 {
-  font-weight: 600;
-  color: var(--color-cream);
-  margin: 0;
   font-size: var(--font-size-h4);
   }
   
   h5 {
-      font-weight: 400;
-      margin: 0;
-      font-size: var(--font-size-h5);
+  font-weight: var( --font-weight-regular);
+  font-size: var(--font-size-h5);
   }
   
-  h6 {}
+  h6 {
+  font-weight: var( --font-weight-regular);
+  font-size: var(--font-size-h6);
+  }
   
   p {
     max-width: 72ch;
@@ -89,7 +111,8 @@ h1 {
 
 header {
   /*background-color: #fff;*/
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.8);
+  background-color: var(--color-primary);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
@@ -110,30 +133,29 @@ header li a {
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
-  color: white;
+  color: var(--color-neutral);
 
 }
 
 header li a:hover,
 header .nav-btn:hover {
-  background-color: #f4f4f4;
-  color: black;
+  background-color: var( --color-tertiary);
+  color: var(--color-primary);
 }
 
 header li a:active,
 header .nav-btn:active {
-  background-color: #f4f4f4;
-  color: black;
+  background-color: var( --color-secondary);
+  background-color: #378ab4;
+  color: var(--color-neutral);
 }
 
 /* **** Logo ***** */
 header .logo {
   display: block;
-  /*float: left;*/
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
-  border: 1px solid red;
   width: 100px;
 }
 
@@ -157,7 +179,7 @@ header .nav-icon {
 }
 
 header .nav-icon .navicon {
-  background: white;
+  background-color: var( --color-neutral);
   display: block;
   height: 2px;
   position: relative;
@@ -167,7 +189,7 @@ header .nav-icon .navicon {
 
 header .nav-icon .navicon:before,
 header .nav-icon .navicon:after {
-  background: white;
+  background-color: var( --color-neutral);
   content: '';
   display: block;
   height: 100%;
@@ -233,7 +255,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: pink url("../images/banner.png");
+  background: var(--color-primary) url("../images/sky.svg");
   background-size: cover;
   background-position: top;
 }
@@ -259,7 +281,7 @@ min-width: 100px;
     height: 80px;
     align-content: center;
     justify-content: center;
-margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 
@@ -436,10 +458,6 @@ margin-top: 4rem;
   line-height: 1.5em;
 }
 
-
-
-
-
 #slideImg:checked ~ .slider {
   display: none;
 }
@@ -455,7 +473,6 @@ margin-top: 4rem;
   cursor: pointer;
 }
 
-
 .slider .slide:before {
   position: absolute;
   content: '';
@@ -470,8 +487,6 @@ margin-top: 4rem;
   transform-origin: left;
 }
 
-
-
 #slide_1:checked ~ .slider .slide_1:before,
 #slide_2:checked ~ .slider .slide_2:before,
 #slide_3:checked ~ .slider .slide_3:before {
@@ -479,9 +494,177 @@ margin-top: 4rem;
   width: 100%;
 }
 
-input {
+#travels input {
   display: none;
 }
+
+
+
+
+/* ******************************************************************* */
+/* *********************** CONTACT ZOG ***************************** */
+/* ******************************************************************* */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  background-image: url("../images/data.svg");
+  background-size: cover;
+  background-position: top; 
+  background-attachment: fixed;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-neutral);
+  padding: var(--spacing-md);
+  border-radius: var(--size-border-radius-small);
+}
+
+input,
+textarea {
+  padding-block: 0.5rem;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--size-border-radius-medium);
+  margin-block-end: var(--spacing-md);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form div:nth-of-type(3) {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+form div:nth-of-type(4) {
+ align-self: flex-end;
+}
+
+/* **************** BUTTON *************** */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--easing-long) ease;
+  background-color: var(--color-primary);
+  color: var(--color-neutral);
+  padding-inline: var(--spacing-md);
+  padding-block: var(--spacing-md);
+  border-radius: var(--size-border-radius-medium);
+  font-size: var(--font-size-default);
+}
+
+button:focus, 
+button:hover {
+  background: var(--color-primary);
+}
+
+/* ************************ */
+/* ******* FOOTER ********* */
+
+footer {
+  padding-inline: var(--spacing-md);
+  padding-block: var(--spacing-md);
+}
+
+/* ***************************** */
+/* ******* BACK TO TOP ********* */
+
+#button {
+  background-color: var(--color-primary);
+  width:  3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  z-index: 1000;
+  display: none;
+  z-index: 99;
+  color:  var(--color-neutral);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--color-neutral);
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: var(--color-secondary);
+}
+
+#button:active {
+  background-color: var(--color-secondary);
+}
+
+
+
+/* *********************************** */
+/* ********** FLYING UFO ************ */
+/* *********************************** */
+
+#animation {
+  position: relative;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+#ufo {
+  /*bottom: 15%;*/
+  top: 50px;
+  position: absolute;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 15s;
+}
+
+
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(0deg);
+  }
+  98% {
+    -webkit-transform: rotateY(0deg);
+  }
+  100% {
+    left: 0;    
+    -webkit-transform: rotateY(0deg);
+  }
+}
+
+#ufo img {
+  width: 150px;
+  height: 150px;
+}
+
+
+
 
 
 /* *********************************** */
@@ -491,6 +674,14 @@ input {
 
 /* Small devices (portrait - phones less than 578px */
 @media (max-width: 575.98px) { 
+
+  html, body {
+    font-size: var(--font-size-mobile);
+  }
+
+  #hero, #about {
+    padding: 0 20px;
+  }
 
   #travels {
     height: 1200px;
@@ -535,12 +726,12 @@ input {
 @media (min-width: 48rem) {
 
   html, body {
-    font-size: var(--font-size-desktop);
+
   }
 
 
   header {
-    border: 1px solid red;
+
   }
   header li {
     float: left;
