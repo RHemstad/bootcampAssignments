@@ -326,7 +326,7 @@ main {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-repeat: no-repeat;
-  /*width: 100vw;*/
+  /*width: 100%;*/
 }
 
 #about h3 {
@@ -634,21 +634,22 @@ footer {
 /* *********************************** */
 
 #animation {
+  width: 100%;
 }
 
-#animation #ufo div,
+#animation div#ufo,
 #animation #ufo img {
   position: relative;
   width: 100px;
   height: 100px;
 }
 
-.x {
+#animation .x {
   -webkit-animation: x 13s linear infinite alternate;
           animation: x 13s linear infinite alternate;
 }
 
-.y {
+#animation .y {
   -webkit-animation: y 7s linear infinite alternate;
           animation: y 7s linear infinite alternate;
 }
