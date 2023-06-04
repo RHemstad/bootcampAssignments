@@ -11,12 +11,12 @@
     /* typography */
     --font-family-body: "Roboto","Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --font-family-headings: "Oswald","Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    --font-size-desktop: 16px;
-    --font-size-mobile: 14px;
-    --font-size-h1: 3.247rem;
-    --font-size-h2: 2.887rem;
-    --font-size-h3: 2.281rem;
-    --font-size-h4: 1.125rem;
+    --font-size-desktop: 1rem;
+    --font-size-mobile: .875rem;
+    --font-size-h1: 3.5rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2.5rem;
+    --font-size-h4: 1.5rem;
     --font-size-h5: .889rem;
 
     --font-size-default: 1rem;
