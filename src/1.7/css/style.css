@@ -3,6 +3,7 @@
    I'd rather spend the extra time reading a book I bought on JS. */
 
 /* Please don't freakin ask how many hours it took for me to write this stinkin css responsive slider */
+/* slider would benefit from clicking on the image to go to the next slide in addition to the bar */
 /* This uses desktop first principles for the responsive design */
 /* still needs a little polish notably on the css slider but I've run out of time */
 
@@ -356,6 +357,14 @@ main {
   width: 100%;
 }
 
+#travels {
+  border: 1px solid green;
+}
+
+#travels h3 {
+  padding-bottom: 2rem;
+}
+
 .card_container {
   /*position: absolute;*/
   height: auto;
@@ -363,19 +372,20 @@ main {
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
-  /*margin-top: -5rem;*/
   background-color: var(--color-neutral);
+  border: 1px solid red;
 }
 
 .card_container .slider {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 10rem;
+  /*bottom: 0;*/
   transform: translateX(-50%);
   z-index: 1;
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
 }
 
 .card_container .inner_part {
@@ -464,7 +474,7 @@ main {
   position: relative;
   height: 10px;
   width: 50px;
-  background: var(--color-alt2);
+  background: var(--color-primary);
   border-radius: 5px;
   display: inline-flex;
   margin: 0 3px;
@@ -479,7 +489,6 @@ main {
   height: 100%;
   width: -100%;
   background: var(--color-secondary);
-  border-radius: 10px;
   transform: scaleX(0);
   transition: transform .6s;
   transform-origin: left;
@@ -728,8 +737,10 @@ footer {
   }
 
   .card_container .slider {
+    /*
     top: 60%;
     bottom: initial;
+    */
 }
 
 .inner_part label {
