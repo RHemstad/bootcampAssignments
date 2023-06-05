@@ -26,11 +26,12 @@ body {
   margin: 0;
   font-family: var(--font-family-body);
   font-weight: var( --font-weight-regular);
-  background-color: var( --color-neutral);
+  background-color: var( --color-primary);
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 
@@ -572,11 +573,14 @@ button {
   padding-block: var(--spacing-md);
   border-radius: var(--size-border-radius-medium);
   width: inherit;
+  border-width: 0;
 }
 
 button:focus, 
-button:hover {
+button:hover,
+button:active {
   background: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 
@@ -586,6 +590,8 @@ button:hover {
 footer {
   padding-inline: var(--spacing-md);
   padding-block: var(--spacing-md);
+  font-size: var(--font-size-small);
+  color: var(--color-neutral);
 }
 
 /* ***************************** */
