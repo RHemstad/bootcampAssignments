@@ -38,6 +38,8 @@
     --color-alt1: #00145c;
     --color-alt2: #fff89a;
 
+    --color-alert: red;
+
 
     /* links */
     --color-link-normal: var(--color-neutral);
@@ -48,7 +50,7 @@
     /* border radius */
     --size-border-radius-full: 50%;
     --size-border-radius-small: 1px;
-    --size-border-radius-medium: 3px;
+    --size-border-radius-medium: 4px;
     --size-border-radius-large: 80px;
 
     /* typography */
