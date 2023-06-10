@@ -8,6 +8,8 @@ app.use(express.static(__dirname + "/src"))
 app.use('/src', serveIndex(__dirname + '/1.2'));
 app.use('/src', serveIndex(__dirname + '/1.5'));
 app.use('/src', serveIndex(__dirname + '/1.7'));
+app.use('/src', serveIndex(__dirname + '/2.1'));
+app.use('/src', serveIndex(__dirname + '/2.2'));
 
 
 
