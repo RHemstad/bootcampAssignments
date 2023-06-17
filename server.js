@@ -12,6 +12,8 @@ app.use("/src", serveIndex(__dirname + "/2.1"));
 app.use("/src", serveIndex(__dirname + "/2.2"));
 app.use("/src", serveIndex(__dirname + "/2.3"));
 app.use("/src", serveIndex(__dirname + "/2.4"));
+app.use("/src", serveIndex(__dirname + "/2.5"));
+app.use("/src", serveIndex(__dirname + "/2.6"));
 
 app.listen(port, () => {
   //server starts listening for any attempts from a client to connect at port: {port}
