@@ -14,7 +14,7 @@ body {
     align-items: center;
     gap: .25rem;
     margin: 0;
-    padding: 0;
+    padding: 0 .25rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -36,7 +36,7 @@ color: #fff;
 border-radius: 3px;
 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 padding: .25rem;
-min-width: 10ch;
+min-width: 8ch;
 min-height: 44px;
 transition: 220ms all ease-in-out;
 cursor: pointer;
@@ -58,6 +58,7 @@ section {
     margin-bottom: 1rem;
     max-width: 400px;
     min-width: 200px;
+    flex-wrap: wrap;
 }
 
 section.operators {
