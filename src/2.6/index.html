@@ -2,12 +2,48 @@
 <html lang="en">
     <head>
         <title>Color Change Interval</title>
-        <link rel="stylesheet" href="./src/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
     </head>
-    <body>
 
-        <!-- See index.js for instruction. -->
+
+    <body>
+        <h1>Color Change Interval</h1>
+
+        <section class="card">
         <div id='target'></div>
-        <script src="./src/index.js"></script>
+
+
+
+        <fieldset>
+            <legend>Controls:</legend>
+
+            <div id="buttons">
+                <label for="buttons">Press the buttons to start and stop the color change interval.</label>
+                <div>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                </div>
+            </div>
+        
+            <div id="checkbox">
+              <input id="toggleSwitch" type="checkbox" data-toggle="toggle">
+              <label for="checkbox">Toggle the switch to start/stop the color change interval.</label>
+            </div>
+        
+
+        </fieldset>
+
+
+
+
+
+
+
+
+        <script src="./index.js"></script>
+        </section>
     </body>
 </html>

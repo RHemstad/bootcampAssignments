@@ -1,7 +1,155 @@
-div {
-    padding:50px;
-    border:1px solid black;
-    position:absolute;
-    top:40px;
-    left:500px;    
+
+
+:root {
+    --form-background: #f9f9f9;
+    --target-border-color: #c9c9c9;
+    --fieldset-border-color: #c9c9c9;
+    --legend-color:#0037fe;
+    --button-background-color: #3e68ff;
+    --button-background-color-hover: #0037fe;
+    --button-background-color-active: #0037fe;
+
+    --card-background-color: #f9f9f9;
+    --card-border-color: 1px solid #c9c9c9;
+
+  }
+
+* {
+    box-sizing: content-box
+  }
+  
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25rem;
+    margin: 0;
+    padding: 0 .25rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div#target {
+    min-width: 100px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--target-border-color);
+}
+
+span {
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+}
+
+/* ********************************* */
+/* *********** CARD ************* */
+
+.card {
+    background: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
+    padding: 1.25rem;
+    border-radius: 8px;
+    width: auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* ********************************* */
+/* *********** FIELDSET ************* */
+
+
+  fieldset {
+    border: 1px solid var(--fieldset-border-color);
+    padding-inline-start: 1.25rem;
+    padding-inline-end: 1.25rem;
+    padding-block-start: .5rem;
+    padding-block-end: .5rem;
+    border-radius: 8px;
+    width: auto;
+    height: fit-content;
+  }
+
+  legend {
+    color: var(--legend-color);
+    font-weight: 500;
+  }
+
+/* ********************************* */
+/* *********** BUTTONS ************* */
+
+  div#buttons {
+    display: flex;
+    gap: .5rem;
+    margin-block-end: 1rem;
+    flex-direction: column;
+  }
+
+  div#buttons > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    background-color: var(--button-background-color);
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    padding: .25rem;
+    min-width: 8ch;
+    min-height: 20px;
+    transition: 220ms all ease-in-out;
+    cursor: pointer;
+    font-size: 1rem;
+    }
+
+    button:hover, button:active {
+        background-color: var(--button-background-color-hover);
+    }
+
+
+/* ********************************* */
+/* *********** CHECKBOX ************* */
+
+    div#checkbox {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+    
+    input[type=checkbox] {
+        background-color: var(--form-background);
+        font: inherit;
+        color: currentColor;
+        width: 1.15rem;
+        height: 1.15rem;
+        border: 0.15rem solid currentColor;
+        border-radius: 0.15rem;
+        transform: translateY(-0.075rem);
+      }
+   
+      
+/* ********************************* */
+/* *********** MEDIA QUERY ************* */
+/* note to self you gotta learn container queries, it would have solved this problem */
+
+/*media query for 360px to 575.98px*/
+@media screen and (max-width: 575.98px) {
+    .card {
+        flex-direction: column;
+    }
+
+
+
 }
