@@ -138,5 +138,18 @@ span {
         border-radius: 0.15rem;
         transform: translateY(-0.075rem);
       }
+   
       
+/* ********************************* */
+/* *********** MEDIA QUERY ************* */
+/* note to self you gotta learn container queries, it would have solved this problem */
 
+/*media query for 360px to 575.98px*/
+@media screen and (max-width: 575.98px) {
+    .card {
+        flex-direction: column;
+    }
+
+
+
+}
